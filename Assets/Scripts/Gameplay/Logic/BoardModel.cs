@@ -8,6 +8,7 @@ namespace BlockJam.Gameplay.Logic
     public sealed class BoardModel
     {
         private const int EmptyCell = -1;
+        private const int ExitedState = -1;
 
         private readonly int[] _occupancy;
         private readonly BoardBlock[] _blocks;
@@ -40,6 +41,37 @@ namespace BlockJam.Gameplay.Logic
         public int Height { get; }
         public IReadOnlyList<BoardBlock> Blocks => _blocks;
         public IReadOnlyList<DoorPlacement> Doors => _doors;
+        internal bool IsCleared => _remainingBlocks == 0;
+
+        // A state holds one value per block: the cell index of its origin, or ExitedState after it has left.
+        internal void CaptureState(int[] state)
+        {
+            for (int i = 0; i < _blocks.Length; i++)
+            {
+                state[i] = _blocks[i].HasExited ? ExitedState : ToIndex(_blocks[i].Origin);
+            }
+        }
+
+        // Restores a captured state without raising events.
+        internal void RestoreState(int[] state)
+        {
+            Array.Fill(_occupancy, EmptyCell);
+            _remainingBlocks = 0;
+
+            for (int i = 0; i < _blocks.Length; i++)
+            {
+                BoardBlock block = _blocks[i];
+                block.HasExited = state[i] == ExitedState;
+                if (block.HasExited)
+                {
+                    continue;
+                }
+
+                block.Origin = new Vector2Int(state[i] % Width, state[i] / Width);
+                Occupy(block, i);
+                _remainingBlocks++;
+            }
+        }
 
         // Moves the block one cell. Returns false when a wall, a wrong door or another block is in the way.
         public bool TryStep(int blockId, Vector2Int direction)

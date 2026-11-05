@@ -13,22 +13,22 @@ MonoBehaviour:
   m_Name: Level_01
   m_EditorClassIdentifier: 
   width: 4
-  height: 5
+  height: 4
   timeLimitSeconds: 45
   coinReward: 10
   blocks:
   - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
     color: 0
     origin: {x: 1, y: 2}
-  - shape: {fileID: 11400000, guid: c4e1572ad7d548b98797cac0ec28a37a, type: 2}
+  - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
     color: 3
     origin: {x: 2, y: 1}
   doors:
-  - side: 1
-    start: 2
+  - side: 2
+    start: 1
     length: 1
     color: 0
-  - side: 2
+  - side: 0
     start: 2
     length: 1
     color: 3

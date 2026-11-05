@@ -29,7 +29,7 @@ namespace BlockJam.Gameplay
         private void Start()
         {
             var progress = new PlayerPrefsProgress();
-            LevelData level = levelCatalog.GetLevel(progress.CurrentLevel);
+            LevelData level = PlaytestLevel.Override ?? levelCatalog.GetLevel(progress.CurrentLevel);
 
             var board = new BoardModel(level);
             var layout = new BoardLayout(level.Width, level.Height);
