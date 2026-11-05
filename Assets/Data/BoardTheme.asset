@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839bbf54058141949a3c9d9bf4187f0f, type: 3}
+  m_Name: BoardTheme
+  m_EditorClassIdentifier: 
+  floorTile: {fileID: 860993969883435969, guid: dcb3d9abfddab7c4fbb244ca4e07dbaa, type: 3}
+  wallSegment: {fileID: 4425714756135788029, guid: 353fbbf1cc09ac442bb89bd62b15cfa7, type: 3}
+  colors:
+  - color: 0
+    blockCell: {fileID: 9210473962522930920, guid: 2a70c08b60d8926428096d24252d2307, type: 3}
+    door: {fileID: 6922159346029674476, guid: 79209c9b64581b546be89bf890cc3f23, type: 3}
+  - color: 1
+    blockCell: {fileID: 4840528120527123684, guid: b1e02708acb415c46862d8e9d45c8366, type: 3}
+    door: {fileID: 9177111688434138826, guid: 3ed8e111ee2585b428bb64d2d6c45222, type: 3}
+  - color: 2
+    blockCell: {fileID: 6379454447300128095, guid: 76e579fbace124c47afeed79aead63fa, type: 3}
+    door: {fileID: 7448333487098871640, guid: 0c90fb356d15dc941a7a10c20c33da9a, type: 3}
+  - color: 3
+    blockCell: {fileID: 1392299005417098784, guid: 2bb64dcef20d3c5448a2609ea176a0b8, type: 3}
+    door: {fileID: 225798413245041575, guid: 96c84f98281add24cbd348a41436a014, type: 3}
