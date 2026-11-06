@@ -32,6 +32,48 @@ MonoBehaviour:
   - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
     color: 0
     origin: {x: 1, y: 2}
+  - shape: {fileID: 11400000, guid: 82aca62e2c934d118b04fcc9d94300f5, type: 2}
+    color: 3
+    origin: {x: 0, y: 5}
+  - shape: {fileID: 11400000, guid: 82aca62e2c934d118b04fcc9d94300f5, type: 2}
+    color: 0
+    origin: {x: 2, y: 3}
+  - shape: {fileID: 11400000, guid: 82aca62e2c934d118b04fcc9d94300f5, type: 2}
+    color: 1
+    origin: {x: 2, y: 5}
+  - shape: {fileID: 11400000, guid: 82aca62e2c934d118b04fcc9d94300f5, type: 2}
+    color: 2
+    origin: {x: 4, y: 2}
+  - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
+    color: 2
+    origin: {x: 5, y: 1}
+  - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
+    color: 2
+    origin: {x: 5, y: 0}
+  - shape: {fileID: 11400000, guid: 82aca62e2c934d118b04fcc9d94300f5, type: 2}
+    color: 0
+    origin: {x: 2, y: 2}
+  - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
+    color: 3
+    origin: {x: 1, y: 1}
+  - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
+    color: 3
+    origin: {x: 2, y: 1}
+  - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
+    color: 3
+    origin: {x: 2, y: 0}
+  - shape: {fileID: 11400000, guid: df68f429c0344c3f9d68c71feabda1f5, type: 2}
+    color: 0
+    origin: {x: 0, y: 3}
+  - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
+    color: 0
+    origin: {x: 0, y: 2}
+  - shape: {fileID: 11400000, guid: df68f429c0344c3f9d68c71feabda1f5, type: 2}
+    color: 1
+    origin: {x: 4, y: 4}
+  - shape: {fileID: 11400000, guid: 9bbb19dba12b4e41b5490fa59cae71b1, type: 2}
+    color: 1
+    origin: {x: 4, y: 3}
   doors:
   - side: 0
     start: 0
